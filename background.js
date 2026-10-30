@@ -61,7 +61,7 @@ async function checkRepos() {
         chrome.action.setBadgeBackgroundColor({ color: '#2547F5' });
         chrome.notifications.create(`cc-${w.owner}-${w.repo}-${latest.sha.slice(0, 7)}`, {
           type: 'basic',
-          iconUrl: 'icons/icon128.png',
+          iconUrl: 'icon128.png',
           title: `New commit in ${w.owner}/${w.repo}`,
           message: `${msg}\nOpen Code Coach to audit it.`,
         });
